@@ -1,11 +1,11 @@
 //
 //  ListScreenPresnter.swift
-//  HelloFreshSampleApp
+//  LazyLoadingSampleApp
 //
 //  Created by Vinay Devdikar on 22/01/22.
 //
 import XCTest
-@testable import HelloFreshSampleApp
+@testable import LazyLoadingSampleApp
 class ListScreenPresenterTest: XCTestCase {
     var mockInteractor: ListScreenInteractorImpl!
     var mockPreseneter: MockPresenter!

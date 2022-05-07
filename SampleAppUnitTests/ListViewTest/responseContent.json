@@ -1,0 +1,37 @@
+[
+    {
+        "id": "533143aaff604d567f8b4571",
+        "name": "Crispy Fish Goujons",
+        "headline": "with Sweet Potato Wedges and Minted Snap Peas",
+        "image": "https://keyassets-p2.timeincuk.net/wp/prod/wp-content/uploads/sites/63/2010/01/05.mayonnaise-1.jpg",
+        "preparation_minutes": 35
+    },
+    {
+        "id": "53314247ff604d44808b4569",
+        "name": "Moroccan Skirt Steak",
+        "headline": "with Spinach and Lemon Couscous",
+        "image": "https://cooksmarts.imgix.net/meal_photos/1810/20211004_Moroccan_Spiced_Skirt_Steak-NM-2.jpg",
+        "preparation_minutes": 30
+    },
+    {
+        "id": "5252b20c301bbf46038b477e",
+        "name": "Genki Yakitori with Crispy Red Onions",
+        "headline": "and Sweet and Sour Noodles",
+        "image": "http://3.bp.blogspot.com/-MJJ_2T78qj4/Umfok8ua7AI/AAAAAAAANZw/t6Wgw9lfot0/s1600/IMG_5475-a.JPG",
+        "preparation_minutes": 40
+    },
+    {
+        "id": "53314328ff604d4d128b456b",
+        "name": "Bacon Wrapped Pork Loin",
+        "headline": "with Peppercorn Sauce",
+        "image": "https://healthyrecipesblogs.com/wp-content/uploads/2021/04/bacon-wrapped-pork-tenderloin-1-2021.jpg",
+        "preparation_minutes": 40
+    },
+    {
+        "id": "53314328ff604d4d128b456b",
+        "name": "Puran Poli",
+        "headline": "with Desi Ghee",
+        "image": "https://shwetainthekitchen.com/wp-content/uploads/2020/03/IMG_7944-scaled.jpg",
+        "preparation_minutes": 40
+    }
+]

@@ -9,13 +9,15 @@ import Foundation
 final class ServiceProvider: RecipiesAPIStrategy {
     private let session: URLSession
     
-    init(urlsession: URLSession =  URLSession.shared) {
+    init(urlsession: URLSession =  .shared) {
         self.session = urlsession
     }
 
     /// fetch all recipies from api with type.
     func listAllRecipies(_ enpoint: APIEndPoint, completion: @escaping (APIResult<Recipes, RecipesError>) -> Void) {
-        guard let request = enpoint.createRequest() else { return completion(.failure(.badRequest))  }
+        guard let request = enpoint.createRequest() else {
+            return completion(.failure(.badRequest))
+        }
         let task = session.dataTask(with: request) { data, respone, error in
             do {
                 guard let jsonData = data else { return }

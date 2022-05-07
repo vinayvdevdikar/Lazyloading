@@ -1,11 +1,11 @@
 //
 //  ListViewRouter.swift
-//  HelloFreshSampleApp
+//  LazyLoadingSampleApp
 //
 //  Created by Vinay Devdikar on 22/01/22.
 //
 import XCTest
-@testable import HelloFreshSampleApp
+@testable import LazyLoadingSampleApp
 class ListScreenRouterTest: XCTestCase {
     var mockRouter: MockRouter!
     var mockViewController: ListScreenController!

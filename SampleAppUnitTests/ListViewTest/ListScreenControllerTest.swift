@@ -1,11 +1,11 @@
 //
 //  ListViewController.swift
-//  HelloFreshSampleApp
+//  LazyLoadingSampleApp
 //
 //  Created by Vinay Devdikar on 22/01/22.
 //
 import XCTest
-@testable import HelloFreshSampleApp
+@testable import LazyLoadingSampleApp
 class ListScreenControllerTest: XCTestCase {
     var mockViewController: ListScreenController!
     var mockTableView: UITableView!
@@ -19,10 +19,10 @@ class ListScreenControllerTest: XCTestCase {
         mockViewController.viewDidLoad()
         mockResponseModel.append(RecipeUIModel(name: "Crispy Fish Goujons",
                                                headline: "with Sweet Potato Wedges and Minted Snap Peas",
-                                               imageUrl: "https://img.hellofresh.com/f_auto,q_auto/hellofresh_s3/image/533143aaff604d567f8b4571.jpg", prepmin: 35))
+                                               imageUrl: "http://3.bp.blogspot.com/-MJJ_2T78qj4/Umfok8ua7AI/AAAAAAAANZw/t6Wgw9lfot0/s1600/IMG_5475-a.JPG", prepmin: 35))
         mockResponseModel.append(RecipeUIModel(name: "Moroccan Skirt Steak",
                                                headline: "with Spinach and Lemon Couscous",
-                                               imageUrl: "https://img.hellofresh.com/f_auto,q_auto/hellofresh_s3/image/53314247ff604d44808b4569.jpg", prepmin: 30))
+                                               imageUrl: "http://3.bp.blogspot.com/-MJJ_2T78qj4/Umfok8ua7AI/AAAAAAAANZw/t6Wgw9lfot0/s1600/IMG_5475-a.JPG", prepmin: 30))
     }
 
     override func tearDownWithError() throws {

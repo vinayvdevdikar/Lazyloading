@@ -7,7 +7,7 @@ API Endpoint manager.
 
 import Foundation
 enum APIEndPoint {
-    static let host: String = "https://hf-mobile-app.s3-eu-west-1.amazonaws.com"
+    static let host: String = ""
     case recipes
     
     var path: String {

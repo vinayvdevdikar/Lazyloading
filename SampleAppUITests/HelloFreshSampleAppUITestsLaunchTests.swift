@@ -1,13 +1,13 @@
 //
-//  HelloFreshSampleAppUITestsLaunchTests.swift
-//  HelloFreshSampleAppUITests
+//  SampleAppUITestsLaunchTests.swift
+//  SampleAppUITests
 //
 //  Created by Vinay Devdikar on 22/01/22.
 //
 
 import XCTest
 
-class HelloFreshSampleAppUITestsLaunchTests: XCTestCase {
+class SampleAppUITestsTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

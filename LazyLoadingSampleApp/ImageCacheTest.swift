@@ -1,17 +1,17 @@
 //
 //  ImageCacheTest.swift
-//  HelloFreshSampleAppTests
+//  LazyLoadingSampleAppTests
 //
 //  Created by Vinay Devdikar on 27/01/22.
 //
 
 import XCTest
-@testable import HelloFreshSampleApp
+@testable import LazyLoadingSampleApp
 
 class ImageCacheTest: XCTestCase {
 
     func test_loadImaeHappyFlow() {
-        guard let url = URL(string: "https://img.hellofresh.com/f_auto,q_auto/hellofresh_s3/image/533143aaff604d567f8b4571.jpg") else { return }
+        guard let url = URL(string: "http://3.bp.blogspot.com/-MJJ_2T78qj4/Umfok8ua7AI/AAAAAAAANZw/t6Wgw9lfot0/s1600/IMG_5475-a.JPG") else { return }
         let expectation: XCTestExpectation = XCTestExpectation(description: "")
         ImageCache.publicCache.load(url: url as NSURL, completion: { image in
             XCTAssertNotNil(image)
@@ -22,7 +22,7 @@ class ImageCacheTest: XCTestCase {
     }
     
     func test_loadImaeErrorCase() {
-        guard let url = URL(string: "https://img.hellofresh.com/hellofresh_s3/533143aaff604d567f8b4571.jpg") else { return }
+        guard let url = URL(string: "http://3.bp.blogspot.com/-MJJ_2T78qj4/t6Wgw9lfot0/s1600/IMG_5475-a.JPG") else { return }
         let expectation: XCTestExpectation = XCTestExpectation(description: "")
         ImageCache.publicCache.load(url: url as NSURL, completion: { image in
             XCTAssertNil(image)

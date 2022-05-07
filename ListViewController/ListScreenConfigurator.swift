@@ -9,8 +9,9 @@ import Foundation
 class ListScreenConfiguratorImpl: ListScreenConfigurator {
     func configure(viewController: ListScreenController){
         let presenter = ListScreenPresenterImpl(viewController: viewController)
+        let provider = ServiceProvider(urlsession: MockURLSession())
         viewController.interactor = ListScreenInteractorImpl(presenter: presenter,
-                                                             provider: ServiceProvider())
+                                                             provider: provider)
         viewController.router = ListScreenRouterImpl(viewController: viewController)
     }
 }

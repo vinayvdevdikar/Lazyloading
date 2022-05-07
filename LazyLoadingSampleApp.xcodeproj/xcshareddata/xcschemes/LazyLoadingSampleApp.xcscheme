@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1320"
+   LastUpgradeVersion = "1330"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "35CE6E2E279C00AF00EB6F34"
-               BuildableName = "HelloFreshSampleApp.app"
-               BlueprintName = "HelloFreshSampleApp"
-               ReferencedContainer = "container:HelloFreshSampleApp.xcodeproj">
+               BuildableName = "LazyLoadingSampleApp.app"
+               BlueprintName = "LazyLoadingSampleApp"
+               ReferencedContainer = "container:LazyLoadingSampleApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "35CE6E44279C00B000EB6F34"
-               BuildableName = "HelloFreshSampleAppTests.xctest"
-               BlueprintName = "HelloFreshSampleAppTests"
-               ReferencedContainer = "container:HelloFreshSampleApp.xcodeproj">
+               BuildableName = "LazyLoadingSampleAppTests.xctest"
+               BlueprintName = "LazyLoadingSampleAppTests"
+               ReferencedContainer = "container:LazyLoadingSampleApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "35CE6E4E279C00B000EB6F34"
-               BuildableName = "HelloFreshSampleAppUITests.xctest"
-               BlueprintName = "HelloFreshSampleAppUITests"
-               ReferencedContainer = "container:HelloFreshSampleApp.xcodeproj">
+               BuildableName = "LazyLoadingSampleAppUITests.xctest"
+               BlueprintName = "LazyLoadingSampleAppUITests"
+               ReferencedContainer = "container:LazyLoadingSampleApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -65,9 +65,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35CE6E2E279C00AF00EB6F34"
-            BuildableName = "HelloFreshSampleApp.app"
-            BlueprintName = "HelloFreshSampleApp"
-            ReferencedContainer = "container:HelloFreshSampleApp.xcodeproj">
+            BuildableName = "LazyLoadingSampleApp.app"
+            BlueprintName = "LazyLoadingSampleApp"
+            ReferencedContainer = "container:LazyLoadingSampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -82,9 +82,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "35CE6E2E279C00AF00EB6F34"
-            BuildableName = "HelloFreshSampleApp.app"
-            BlueprintName = "HelloFreshSampleApp"
-            ReferencedContainer = "container:HelloFreshSampleApp.xcodeproj">
+            BuildableName = "LazyLoadingSampleApp.app"
+            BlueprintName = "LazyLoadingSampleApp"
+            ReferencedContainer = "container:LazyLoadingSampleApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

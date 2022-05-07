@@ -1,6 +1,6 @@
 //
 //  BaseViewController.swift
-//  HelloFreshSampleApp
+//  SampleApp
 //
 //  Created by Vinay Devdikar on 22/01/22.
 //
