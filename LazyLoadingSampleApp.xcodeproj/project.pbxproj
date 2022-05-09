@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		352FA89727A1BC9A0078FF29 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352FA89627A1BC9A0078FF29 /* ImageCache.swift */; };
+		353BE5732828EC5600493A98 /* ListScreenInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581443028269DC10026539C /* ListScreenInteractorTest.swift */; };
+		353BE5742828EC7500493A98 /* ListScreenControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581443128269DC10026539C /* ListScreenControllerTest.swift */; };
+		353BE5752828EC7D00493A98 /* ListScreenRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581443228269DC10026539C /* ListScreenRouterTest.swift */; };
+		353BE5762828EC8A00493A98 /* ListScreenPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581442E28269DC10026539C /* ListScreenPresenterTest.swift */; };
 		353EE36127A123DD00F33C04 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353EE36027A123DD00F33C04 /* UITableView+Extension.swift */; };
 		356D3B98279D3C57003ED085 /* RecipesUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D3B97279D3C57003ED085 /* RecipesUIModel.swift */; };
 		358144062826655B0026539C /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358144042826655B0026539C /* MockSession.swift */; };
@@ -20,10 +24,6 @@
 		3581442828269D830026539C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581442128269D830026539C /* AppDelegate.swift */; };
 		3581442A28269D830026539C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581442328269D830026539C /* SceneDelegate.swift */; };
 		3581443528269DC10026539C /* responseContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 3581442F28269DC10026539C /* responseContent.json */; };
-		3581443928269DD00026539C /* ListScreenControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581443128269DC10026539C /* ListScreenControllerTest.swift */; };
-		3581443A28269DD00026539C /* ListScreenRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581443228269DC10026539C /* ListScreenRouterTest.swift */; };
-		3581443B28269DD00026539C /* ListScreenPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581442E28269DC10026539C /* ListScreenPresenterTest.swift */; };
-		3581443C28269DD00026539C /* ListScreenInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581443028269DC10026539C /* ListScreenInteractorTest.swift */; };
 		3581443D28269DD50026539C /* responseContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 3581442F28269DC10026539C /* responseContent.json */; };
 		35B9BDB627A157B400BE7047 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B9BDB527A157B400BE7047 /* Theme.swift */; };
 		35BC7D1727A0081F00A48E90 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BC7D1627A0081F00A48E90 /* ListItemTableViewCell.swift */; };
@@ -425,12 +425,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3581443B28269DD00026539C /* ListScreenPresenterTest.swift in Sources */,
-				3581443A28269DD00026539C /* ListScreenRouterTest.swift in Sources */,
-				3581443C28269DD00026539C /* ListScreenInteractorTest.swift in Sources */,
+				353BE5752828EC7D00493A98 /* ListScreenRouterTest.swift in Sources */,
+				353BE5732828EC5600493A98 /* ListScreenInteractorTest.swift in Sources */,
+				353BE5742828EC7500493A98 /* ListScreenControllerTest.swift in Sources */,
 				358144062826655B0026539C /* MockSession.swift in Sources */,
+				353BE5762828EC8A00493A98 /* ListScreenPresenterTest.swift in Sources */,
 				35EA0FE128269E270084A2B3 /* ImageCacheTest.swift in Sources */,
-				3581443928269DD00026539C /* ListScreenControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

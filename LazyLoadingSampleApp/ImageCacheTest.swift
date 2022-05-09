@@ -11,13 +11,13 @@ import XCTest
 class ImageCacheTest: XCTestCase {
 
     func test_loadImaeHappyFlow() {
-        guard let url = URL(string: "http://3.bp.blogspot.com/-MJJ_2T78qj4/Umfok8ua7AI/AAAAAAAANZw/t6Wgw9lfot0/s1600/IMG_5475-a.JPG") else { return }
+        guard let url = URL(string: "https://cooksmarts.imgix.net/meal_photos/1810/20211004_Moroccan_Spiced_Skirt_Steak-NM-2.jpg") else { return }
         let expectation: XCTestExpectation = XCTestExpectation(description: "")
         ImageCache.publicCache.load(url: url as NSURL, completion: { image in
             XCTAssertNotNil(image)
             expectation.fulfill()
         })
-        wait(for: [expectation], timeout: 5.0)
+        wait(for: [expectation], timeout: 2.0)
         
     }
     

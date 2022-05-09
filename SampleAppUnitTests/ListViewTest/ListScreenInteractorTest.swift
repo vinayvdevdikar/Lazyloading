@@ -9,15 +9,13 @@ import XCTest
 class ListScreenInteractorTest: XCTestCase {
     var mockInteractor: ListScreenInteractorImpl!
     var mockPreseneter: MockPresenter!
-    var mockViewController: ListScreenController!
     let queue = DispatchQueue.global()
     
     override func setUpWithError() throws {
         try super.setUpWithError()
-        mockViewController = ListScreenController()
-        mockPreseneter = MockPresenter(viewController: mockViewController)
+        mockPreseneter = MockPresenter()
         mockInteractor = ListScreenInteractorImpl(presenter: mockPreseneter,
-                                                  provider: ServiceProvider(urlsession: MockURLSession.shared))
+                                                  provider: ServiceProvider(urlsession: MockURLSession()))
         
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -25,8 +23,8 @@ class ListScreenInteractorTest: XCTestCase {
     func test_fetchAllRecipiesWithViewUpdate() {
         mockInteractor.fetchAllRecipies()
         let expectation: XCTestExpectation = XCTestExpectation(description: "")
-        queue.asyncAfter(deadline: .now() + 0.5) {
-            XCTAssertFalse(self.mockViewController.listOfRecipes.isEmpty)
+        queue.asyncAfter(deadline: .now() + 3.0) {
+            XCTAssertFalse(self.mockPreseneter.recipes.isEmpty)
             expectation.fulfill()
         }
         wait(for: [expectation], timeout: 5.0)
@@ -34,21 +32,22 @@ class ListScreenInteractorTest: XCTestCase {
 }
 
 
-class MockPresenter: ListScreenPresenterImpl {
+class MockPresenter: ListScreenPresenter {
     var isCalledMethod = false
+    var recipes: [RecipeUIModel] = []
     
-    override func recipeDidFetchedSuccessfully(with recipes: [RecipeUIModel]) {
-        super.recipeDidFetchedSuccessfully(with: recipes)
+    func recipeDidFetchedSuccessfully(with recipes: [RecipeUIModel]) {
         isCalledMethod = true
+        self.recipes = recipes
     }
     
-    override func recipeDidFail(with error: RecipesError) {
-        super.recipeDidFail(with: error)
+    func recipeDidFail(with error: RecipesError) {
         isCalledMethod = true
     }
     
     func resetFlag() {
         isCalledMethod = false
+        recipes = []
     }
     
 }
