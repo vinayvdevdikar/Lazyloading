@@ -22,6 +22,7 @@ class ListScreenController: UIViewController {
     private lazy var spinerView: UIActivityIndicatorView = {
         let activity =  UIActivityIndicatorView()
         activity.style = .medium
+        activity.color = .black
         activity.translatesAutoresizingMaskIntoConstraints = false
         activity.hidesWhenStopped = true
         return activity
