@@ -13,6 +13,9 @@
 		353BE5752828EC7D00493A98 /* ListScreenRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581443228269DC10026539C /* ListScreenRouterTest.swift */; };
 		353BE5762828EC8A00493A98 /* ListScreenPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3581442E28269DC10026539C /* ListScreenPresenterTest.swift */; };
 		353EE36127A123DD00F33C04 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353EE36027A123DD00F33C04 /* UITableView+Extension.swift */; };
+		3543EE79282AA9C2007066DA /* iOSSnapshotTestCase in Frameworks */ = {isa = PBXBuildFile; productRef = 3543EE78282AA9C2007066DA /* iOSSnapshotTestCase */; };
+		3543EE7B282AA9D4007066DA /* SampleAppUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3543EE7A282AA9D4007066DA /* SampleAppUITest.swift */; };
+		3543EE7C282AAA88007066DA /* ListScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE6E67279C016100EB6F34 /* ListScreenController.swift */; };
 		356D3B98279D3C57003ED085 /* RecipesUIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356D3B97279D3C57003ED085 /* RecipesUIModel.swift */; };
 		358144062826655B0026539C /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358144042826655B0026539C /* MockSession.swift */; };
 		358144072826683F0026539C /* MockSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358144042826655B0026539C /* MockSession.swift */; };
@@ -27,7 +30,6 @@
 		3581443D28269DD50026539C /* responseContent.json in Resources */ = {isa = PBXBuildFile; fileRef = 3581442F28269DC10026539C /* responseContent.json */; };
 		35B9BDB627A157B400BE7047 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B9BDB527A157B400BE7047 /* Theme.swift */; };
 		35BC7D1727A0081F00A48E90 /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BC7D1627A0081F00A48E90 /* ListItemTableViewCell.swift */; };
-		35CE6E68279C016100EB6F34 /* ListScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE6E67279C016100EB6F34 /* ListScreenController.swift */; };
 		35CE6E6A279C018300EB6F34 /* ListScreenConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE6E69279C018300EB6F34 /* ListScreenConfigurator.swift */; };
 		35CE6E6C279C019B00EB6F34 /* ListScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE6E6B279C019B00EB6F34 /* ListScreenInteractor.swift */; };
 		35CE6E6E279C01A700EB6F34 /* ListScreenInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CE6E6D279C01A700EB6F34 /* ListScreenInterface.swift */; };
@@ -61,6 +63,7 @@
 /* Begin PBXFileReference section */
 		352FA89627A1BC9A0078FF29 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		353EE36027A123DD00F33C04 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		3543EE7A282AA9D4007066DA /* SampleAppUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleAppUITest.swift; sourceTree = "<group>"; };
 		356D3B97279D3C57003ED085 /* RecipesUIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesUIModel.swift; sourceTree = "<group>"; };
 		358144042826655B0026539C /* MockSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSession.swift; sourceTree = "<group>"; };
 		3581441428269D5E0026539C /* HelloFreshSampleAppUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelloFreshSampleAppUITests.swift; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3543EE79282AA9C2007066DA /* iOSSnapshotTestCase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				3581442D28269DC10026539C /* ListViewTest */,
+				3543EE7A282AA9D4007066DA /* SampleAppUITest.swift */,
 			);
 			path = SampleAppUnitTests;
 			sourceTree = SOURCE_ROOT;
@@ -300,6 +305,9 @@
 				35CE6E47279C00B000EB6F34 /* PBXTargetDependency */,
 			);
 			name = LazyLoadingSampleAppTests;
+			packageProductDependencies = (
+				3543EE78282AA9C2007066DA /* iOSSnapshotTestCase */,
+			);
 			productName = HelloFreshSampleAppTests;
 			productReference = 35CE6E45279C00B000EB6F34 /* LazyLoadingSampleAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -354,6 +362,9 @@
 				Base,
 			);
 			mainGroup = 35CE6E26279C00AF00EB6F34;
+			packageReferences = (
+				3543EE77282AA9C2007066DA /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */,
+			);
 			productRefGroup = 35CE6E30279C00AF00EB6F34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -403,6 +414,7 @@
 				35D3D1E1279C227800316818 /* APIEndPoint.swift in Sources */,
 				3581442828269D830026539C /* AppDelegate.swift in Sources */,
 				35CE6E94279C15E800EB6F34 /* APIResult.swift in Sources */,
+				3543EE7C282AAA88007066DA /* ListScreenController.swift in Sources */,
 				35BC7D1727A0081F00A48E90 /* ListItemTableViewCell.swift in Sources */,
 				35CE6E92279C15D800EB6F34 /* APIStrategy.swift in Sources */,
 				358144072826683F0026539C /* MockSession.swift in Sources */,
@@ -410,7 +422,6 @@
 				352FA89727A1BC9A0078FF29 /* ImageCache.swift in Sources */,
 				356D3B98279D3C57003ED085 /* RecipesUIModel.swift in Sources */,
 				353EE36127A123DD00F33C04 /* UITableView+Extension.swift in Sources */,
-				35CE6E68279C016100EB6F34 /* ListScreenController.swift in Sources */,
 				35B9BDB627A157B400BE7047 /* Theme.swift in Sources */,
 				35D3D1DF279C204100316818 /* Recipe.swift in Sources */,
 				35CE6E70279C01BB00EB6F34 /* ListScreenRouter.swift in Sources */,
@@ -431,6 +442,7 @@
 				358144062826655B0026539C /* MockSession.swift in Sources */,
 				353BE5762828EC8A00493A98 /* ListScreenPresenterTest.swift in Sources */,
 				35EA0FE128269E270084A2B3 /* ImageCacheTest.swift in Sources */,
+				3543EE7B282AA9D4007066DA /* SampleAppUITest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +774,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3543EE77282AA9C2007066DA /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/ios-snapshot-test-case.git";
+			requirement = {
+				kind = exactVersion;
+				version = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3543EE78282AA9C2007066DA /* iOSSnapshotTestCase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3543EE77282AA9C2007066DA /* XCRemoteSwiftPackageReference "ios-snapshot-test-case" */;
+			productName = iOSSnapshotTestCase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 35CE6E27279C00AF00EB6F34 /* Project object */;
 }

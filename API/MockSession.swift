@@ -15,7 +15,7 @@ class MockURLSession: URLSession {
             guard let path = Bundle.main.path(forResource: "responseContent", ofType: "json") else { return mockTask }
             do {
                 let jsonData = try Data(contentsOf: URL(fileURLWithPath: path), options: .dataReadingMapped)
-                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                     completionHandler(jsonData, URLResponse(), nil)
                 }
             }catch {
