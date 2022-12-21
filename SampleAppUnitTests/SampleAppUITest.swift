@@ -33,14 +33,12 @@ class SampleAppUITest: FBSnapshotTestCase {
 
     func test_fetchAllRecipiesWithViewUpdate() {
         recordMode = false
-        mockInteractor.fetchAllRecipies()
         let expectation: XCTestExpectation = XCTestExpectation(description: "")
-        queue.asyncAfter(deadline: .now() + 10.0) {
+        queue.asyncAfter(deadline: .now() + 15.0) {
             self.FBSnapshotVerifyView(self.sut.view)
-            self.FBSnapshotVerifyLayer(self.sut.view.layer)
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: 15.0)
     }
 
 }
